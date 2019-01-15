@@ -1,0 +1,8 @@
+/usr/bin/bitcoinold-cli		--	gen_context(system_u:object_r:bitcoinold_exec_t,s0)
+/usr/sbin/bitcoinoldd		--	gen_context(system_u:object_r:bitcoinold_exec_t,s0)
+/usr/lib(64)?/bitcoinold/bitcoinoldd		--	gen_context(system_u:object_r:bitcoinold_exec_t,s0)
+
+/etc/bitcoinold(/.*)?		gen_context(system_u:object_r:bitcoinold_conf_t,s0)
+/var/lib/bitcoinold(/.*)?		gen_context(system_u:object_r:bitcoinold_var_lib_t,s0)
+
+(/var)?/run/bitcoinoldd(/.*)?   gen_context(system_u:object_r:bitcoinold_var_run_t,s0)

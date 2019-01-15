@@ -1,0 +1,6 @@
+usr/local/bin/bitcoinold-qt usr/bin
+share/pixmaps/bitcoinold32.xpm usr/share/pixmaps
+share/pixmaps/bitcoinold16.xpm usr/share/pixmaps
+share/pixmaps/bitcoinold128.png usr/share/pixmaps
+debian/bitcoinold-qt.desktop usr/share/applications
+debian/bitcoinold-qt.protocol usr/share/kde4/services/

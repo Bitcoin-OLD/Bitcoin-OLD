@@ -1,0 +1,11 @@
+[Protocol]
+exec=bitcoinold-qt '%u'
+protocol=bitcoinold
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

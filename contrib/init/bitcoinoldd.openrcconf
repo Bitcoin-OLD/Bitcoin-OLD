@@ -1,0 +1,33 @@
+# /etc/conf.d/bitcoinoldd: config file for /etc/init.d/bitcoinoldd
+
+# Config file location
+#BITCOINOLDD_CONFIGFILE="/etc/bitcoinold/bitcoinold.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOINOLDD_USER)
+#BITCOINOLDD_PIDDIR="/var/run/bitcoinoldd"
+
+# What filename to give the pidfile
+#BITCOINOLDD_PIDFILE="${BITCOINOLDD_PIDDIR}/bitcoinoldd.pid"
+
+# Where to write bitcoinoldd data (be mindful that the blockchain is large)
+#BITCOINOLDD_DATADIR="/var/lib/bitcoinoldd"
+
+# User and group to own bitcoinoldd process
+#BITCOINOLDD_USER="bitcoinold"
+#BITCOINOLDD_GROUP="bitcoinold"
+
+# Path to bitcoinoldd executable
+#BITCOINOLDD_BIN="/usr/bin/bitcoinoldd"
+
+# Nice value to run bitcoinoldd under
+#BITCOINOLDD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOINOLDD_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for bitcoinoldd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOINOLDD_SIGTERM_TIMEOUT=60

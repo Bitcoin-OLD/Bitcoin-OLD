@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Bitcoinold Core
+Comment=Connect to the Bitcoinold P2P Network
+Comment[de]=Verbinde mit dem Bitcoinold peer-to-peer Netzwerk
+Comment[fr]=Bitcoinold, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Bitcoinold, eşten eşe kriptografik sanal para birimi
+Exec=bitcoinold-qt %u
+Terminal=false
+Type=Application
+Icon=bitcoinold128
+MimeType=x-scheme-handler/bitcoinold;
+Categories=Office;Finance;
